@@ -1,0 +1,68 @@
+.appButton {
+  padding: 16px 62px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  text-transform: uppercase;
+  transition: 0.1s all linear;
+}
+.outlined {
+  border: 1px solid #1f6ed4;
+  color: #1f6ed4;
+  font-size: 14px;
+  font-weight: 500;
+}
+.outlined:not(:disabled):hover {
+  border: 1.5px solid #4c94f4;
+}
+.outlined:not(:disabled):active {
+  background: #0052bc;
+  color: white;
+  border: none;
+}
+.outlined:disabled {
+  color: #c9c9c9;
+  border: #c9c9c9;
+  cursor: not-allowed;
+  background: none;
+}
+
+/* contained */
+
+.contained {
+  background-color: #1f6ed4;
+  color: white;
+  border: none;
+}
+.contained:not(:disabled):hover {
+  background-color: #4c94f0;
+}
+.container:not(:disabled):active {
+  background-color: #0052bc;
+}
+.container:disabled {
+  background: #c9c9c9;
+  cursor: not-allowed;
+}
+
+/* warning */
+
+.warning {
+  padding: 14px 61px;
+  background-color: #f37705;
+}
+.warning:not(:disabled):hover {
+  background-color: #ff912b;
+}
+.warning:not(:disabled):active {
+  background-color: #cf6300;
+}
+
+
+.danger{
+    background-color: red;
+}
